@@ -24,6 +24,11 @@ public class Sorts {
 
   public static void bubblesort( int [] ary) {
     boolean Sorted = false;
+    while( !Sorted) {
+      for( int i = 0; i < ary.length; i++) {
+        
+      }
+    }
 
   }
 
