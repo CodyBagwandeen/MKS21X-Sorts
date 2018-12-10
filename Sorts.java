@@ -23,17 +23,18 @@ public class Sorts {
   }
 
   public static void bubblesort( int [] ary) {
-    //boolean Sorted = false;
-    //while( !Sorted) {
+    boolean Sorted = false;
+    while( !Sorted) {
       for( int i = 0; i < ary.length; i++) {
+        Sorted = true;
         for ( int j = 0; j < ary.length - ( i+ 1); j++) {
           if ( ary[j] > ary[j+1]) {
             int a = ary[j];
             int b = ary[j+1];
             ary[j] = b;
             ary[j+1] = a;
-            //Sorted = false;
-          //}
+            Sorted = false;
+          }
         }
       }
     }
@@ -59,8 +60,6 @@ public class Sorts {
     //selectionsort(c);
     //selectionsort(d);
     //selectionsort(e);
-
-
 
     bubblesort(a);
     bubblesort(b);
