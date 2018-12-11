@@ -44,12 +44,16 @@ public class Sorts {
 
 public static void insertionSort(int [] ary) {
   for( int i = 1; i < ary.length; i++) {
-    if( ary[i] < ary[i-1]) {
       int value = ary[i];
-      for( int j = i-1; j > i ; )
+      int current = i;
+      while( current > 0 && ary[current-1] > value) {
+        ary[current] = ary[current-1];
+        current--;
+      }
+      ary[current] = value;
     }
   }
-}
+
 
 
 
@@ -77,11 +81,17 @@ public static void insertionSort(int [] ary) {
     //selectionsort(d);
     //selectionsort(e);
 
-    bubbleSort(a);
-    bubbleSort(b);
-    bubbleSort(c);
-    bubbleSort(d);
-    bubbleSort(e);
+    //bubbleSort(a);
+    //bubbleSort(b);
+    //bubbleSort(c);
+    //bubbleSort(d);
+    //bubbleSort(e);
+
+    insertionSort(a);
+    insertionSort(b);
+    insertionSort(c);
+    insertionSort(d);
+    insertionSort(e);
 
     System.out.println("A sorted : [-1231, -3, 2, 5, 7, 7, 9, 12, 15, 189]");
     System.out.println("B sorted : [-9, -7, -1, 5, 12, 15, 19, 31, 97, 2123]");
