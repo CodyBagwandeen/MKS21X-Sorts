@@ -67,13 +67,19 @@ public static void insertionSort(int [] ary) {
     int[] c = {115,2,-3234,-189,-1231,37,-5,9,7,-612};
     int[] d = {-125,2,-3,189,1231,7,5,9,-7,12};
     int[] e = {15,2,-3345345,-189,-1231,-7,-5578,9,7,12};
+    int[] f = new int[1000000];
+
+
 
     System.out.println(Arrays.toString(a));
     System.out.println(Arrays.toString(b));
     System.out.println(Arrays.toString(c));
     System.out.println(Arrays.toString(d));
     System.out.println(Arrays.toString(e));
+
     System.out.println(" \n");
+
+    //bubbleSort(f);
 
     //selectionsort(a);
     //selectionsort(b);
@@ -87,11 +93,11 @@ public static void insertionSort(int [] ary) {
     //bubbleSort(d);
     //bubbleSort(e);
 
-    insertionSort(a);
-    insertionSort(b);
-    insertionSort(c);
-    insertionSort(d);
-    insertionSort(e);
+    //insertionSort(a);
+    //insertionSort(b);
+    //insertionSort(c);
+    //insertionSort(d);
+    //insertionSort(e);
 
     System.out.println("A sorted : [-1231, -3, 2, 5, 7, 7, 9, 12, 15, 189]");
     System.out.println("B sorted : [-9, -7, -1, 5, 12, 15, 19, 31, 97, 2123]");
